@@ -1,0 +1,75 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.delay-label {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  width: 100%;
+}
+
+label,
+legend {
+  align-items: flex-start;
+  row-gap: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+label {
+  margin-bottom: 16px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 8px;
+  padding: 16px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  margin-bottom: 24px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  justify-content: center;
+}
+
+input[name='delay'] {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input[name='delay']:hover,
+input[name='delay']:focus,
+fieldset:focus-within,
+fieldset:hover {
+  border-color: #000;
+}
+
+input[name='delay']:active {
+  border-color: #4e75ff;
+  outline: none;
+}
